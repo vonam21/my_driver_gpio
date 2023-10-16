@@ -1,0 +1,12 @@
+menuconfig GPIO 
+    bool "This is my driver gpio"
+    help 
+        this is my driver gpio 
+
+config CHOSEN_GPIO
+    bool "chosen_gpio"
+    default y 
+    depends on DT_HAS_ZEPHYR_VO_KHAC_NAM_ENABLED
+    help 
+        Select this to is gpio driver
+    
